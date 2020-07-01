@@ -239,7 +239,7 @@ html{
     margin-top: 5px;
 }
 .modal__description .year{
-    color: #000;
+    color: #fff;
     font-size: 20px;
     margin-top: 5px;
 }
@@ -307,14 +307,14 @@ html{
 	max-height: 800px;
     padding: 35px 50px 35px 50px;
     background-color: #ccc;
-    background-image: url();
+    background-image: url(../img/modalfon.jpg);
     /* background-image: url(https://krot.info/uploads/posts/2020-01/1579539522_26-82.jpg); */
     background-position: center;
     box-shadow:  10px -10px 10px 1px #000;
     font-size: 14px;
     line-height: 1.2;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     margin: 0 200px;
     display: flex;
     justify-content: space-between;
