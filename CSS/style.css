@@ -92,6 +92,10 @@ html{
 }
 .more{
     text-transform: uppercase;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fff;
     background-color: #000;
     border: none;
@@ -300,7 +304,7 @@ html{
 	min-width: 700px;
     max-width: 1020px;
     min-height: 400px;
-	max-height: 1050px;
+	max-height: 800px;
     padding: 35px 50px 35px 50px;
     background-color: #ccc;
     background-image: url();
@@ -439,57 +443,11 @@ html{
     border-radius: 10px;
 
 }
-
 .section{
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.events-future{
-    display: flex;
-    align-items: center;
-    margin-top: 60px;
-}
-.date{
-    width: 270px;
-    height: 290px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/event.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #fff;
-    font-size: 30px;
-}
-.events-text{
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-left: 50px; 
-    height: 290px;   
-}
-.event-title{
-    font-size: 22px;
-    font-weight: 600;
-    line-height: 22px;
-}
-.event-text{
-    font-size: 16px;
-    margin-top: 20px;
-}
-.button-event{
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #df001f;
-    border: none;
-    border-radius: 40px;
-    outline: none;
-    width: 200px;
-    height: 50px;
-    margin-top: 20px;
-    cursor: pointer;
 }
 .best-clips{
     height: 850px;
@@ -709,68 +667,6 @@ html{
 .video-text span{
     font-size: 22px;
 }
-.buttons-slider2{
-    width: 30px;
-    height: 30px;
-    border: none;
-    background-color: #df001f;
-    color: #fff;
-    outline: none;
-    cursor: pointer;
-}
-.button-wrapper2{
-    text-align: right;
-    height: 30px;
-}
-.swiper-wrapper2{
-    width: 270px !important;
-}
-
-
-.history{
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    color: #fff;
-    background-image: url(../img/history.jpg);
-    height: 370px;
-}
-.history-wrapper{
-    max-width: 600px;
-    margin: 100px;
-}
-.history-title{
-    font-size: 30px;
-    font-weight: 600;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-.history-description{
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-.history-description strong{
-    font-size: 35px;
-    font-family: 'Dancing Script', cursive;
-}
-.button-history{
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #df001f;
-    border: none;
-    border-radius: 40px;
-    outline: none;
-    width: 150px;
-    height: 50px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition-duration: 1s;
-}
-.button-history:hover{
-    background-color: #fff;
-    color: #df001f;
-}
 .popular{
     margin-top: 100px;
     display: flex;
@@ -839,31 +735,7 @@ audio{
     height: 40px;
     width: 230px;
 }
-.playlist-link{
-    text-decoration: none;
-    font-size: 16px;
-    color: #000;
-}
-.photo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 330px;
-}
-.instagram{
-    margin-left: 20px;
-}
-.photo img{
-    margin-top: 20px;
-    max-width: 150px;
-}
-.advertising{
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-}
-.bord{
+rd{
     background-image: url(../img/fon.jpg);
     display: flex;
     flex-direction: column;
@@ -871,51 +743,6 @@ audio{
     align-items: center;
     height: 350px;
     color: #fff;
-}
-.bord-buton-group{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-}
-.bord-link1{
-    width: 162px;
-    height: 50px;
-    background-image: url(../img/button1.png);
-    margin-right: 40px;
-}
-.bord-link2{
-    width: 162px;
-    height: 50px;
-    background-image: url(../img/button2.png);
-}
-.bord-title{
-    font-size: 32px;
-}
-.bord-text{
-    font-size: 22px;
-}
-.newsletter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 215px;
-    border-bottom: 1px solid #ccc;
-}
-.input-group{
-    display: flex;
-    align-items: center;
-    width: 500px;
-    justify-content: space-between;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 20px;
-}
-.input-group input{
-    width: 370px;
-    background: transparent;
-    border: none;
-    outline: none;
-    font-size: 20px;
 }
 .footer{
     height: 115px;
@@ -1062,6 +889,9 @@ audio{
     .modal__description{
         max-width: 700px;
     }
+    .modal-content{
+        min-width: 270px;
+    }
     .songs{
         flex: 50%;
     }
@@ -1110,28 +940,10 @@ audio{
     .team-text{
         max-width: 300px;
     }
-    .date{
-        width: 220px;
-        height: 240px;
-    }
     .video{
         width: 220px;
         height: 240px;
         margin-top: 70px;
-    }
-    .button-event{
-        width: 150px;
-        height: 30px;
-        font-size: 12px;
-    }
-    .button-wrapper2{
-        display: none;
-    }
-    .playlist-wrapper {
-        width: 400px;
-    }
-    .playlist {
-        max-width: 250px;
     }
     .song img{
         width: 250px;
@@ -1145,6 +957,12 @@ audio{
     }
     .header-next{
         height: 500px;
+    }
+    .modal-content{
+        min-width: 370px;
+        max-width: 700px;
+        min-height: 200px;
+        max-height: 500px;
     }
 }
 @media (max-width: 768px){
@@ -1170,27 +988,11 @@ audio{
     .burger{
         display: block;
     }
-    .instagram{
-        display: none;
-    }
-    .date{
-        width: 200px;
-        height: 220px;
-    }
     section{
         flex-wrap: wrap;
     }
-    .playlist-wrapper {
-        width: 500px;
-    }
-    .playlist li{
-        width: 250px;
-    }
     .song img{
         width: 350px;
-    }
-    .bord-text, .bord-title{
-        font-size: 20px;
     }
     .header-next{
         background-position: right center;
@@ -1247,9 +1049,18 @@ audio{
     .title h1{
         font-size: 90px;
     }
+    .album {
+        max-width: 228px;
+        margin-right: 40px;
+    }
+    .modal-content{
+        min-width: 470px;
+        min-height: 300px;
+        max-height: 500px;
+    }
 }
 
-@media (max-width: 450px){
+@media (max-width: 500px){
     .container{
         width: 350px;
     }
@@ -1263,56 +1074,11 @@ audio{
         margin-top: 20px;
         width: 150px;
     }
-    .events-future{
-        margin: 0;
-    }
-    .events-text{
-        margin-left: 20px;
-    }
-    .event-title{
-        font-size: 18px;
-    }
-    .date{
-        width: 170px;
-        height: 190px;
-    }
-    .history-wrapper {
-        max-width: 623px;
-        margin: 44px;
-    }
-    .history-description{
-        font-size: 16px;
-    }
-    .history-title{
-        font-size: 18px;
-    }
     .song img{
         width: 200px;
     }
-    .playlist-wrapper{
-        width: 300px;
-    }
-    .playlist li{
-        width: 250px;
-    }
     audio{
         margin-left: 20px;
-    }
-    .playlist:last-child{
-        display: none;
-    }
-    .playlist-link{
-        font-size: 14px;
-        margin: auto;
-    }
-    .bord-text{
-        font-size: 14px;
-    }
-    .bord{
-        display: none;
-    }
-    .input-group, .input-group input{
-        width: 200px;
     }
     .footer-nav{
         display: block;
@@ -1339,6 +1105,8 @@ audio{
     }
     .modal-content{
         min-width: 330px;
+        min-height: 300px;
+        max-height: 500px;
     }
     .info{
         font-size: 14px;
@@ -1349,6 +1117,25 @@ audio{
     .members-title span{
         font-size: 25px;
     }
+    .video,.video2,.video3,.video4,.video5,.video6,.clips1,.clips2,.clips3,.clips4,.clips5,.clips6{
+        width: 290px;
+        height: -webkit-fill-available;
+    }
+    .video-text{
+        max-width: 290px;
+    }
+    .modal__description .year{
+        font-size: 14px;
+    }
+    audio{
+        max-width: 176px;
+    }
+    .songs span{
+        font-size: 16px;
+    }
+    .footer-text{
+        display: none;
+    }  
 }
 @media (max-width: 320px){
     .container{
@@ -1361,11 +1148,11 @@ audio{
         font-size: 14px;
     }
     .video,.video2,.video3,.video4,.video5,.video6,.clips1,.clips2,.clips3,.clips4,.clips5,.clips6{
-        width: 290px;
+        width: 254px;
         height: -webkit-fill-available;
     }
     .video-text{
-        max-width: 290px;
+        max-width: 254px;
     }
     .track img{
         max-width: 100px;
@@ -1391,6 +1178,19 @@ audio{
     }
     .button-event{
         width: 120px;
+    }
+    .album {
+        max-width: 155px;
+        margin-right: 40px;
+    }
+    .modal__description .year{
+        font-size: 12px;
+    }
+    audio{
+        max-width: 176px;
+    }
+    .songs span{
+        font-size: 14px;
     }
     .footer-nav{
         display: flex;
@@ -1427,5 +1227,17 @@ audio{
     }
     audio{
         margin: 0;
+    }
+    .team-card, .team-card img, .team-text{
+        max-width: 250px;
+    }
+    .button-wrapper{
+        width: 90%;
+    }
+    .mobile .navigation-link{
+        font-size: 18px;
+    }
+    .more{
+        width: 137px;
     }
 }

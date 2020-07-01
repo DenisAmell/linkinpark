@@ -105,8 +105,11 @@ $(document).ready(function () {
     	},
 		991:{
     		slidesPerView: 2,
-    	},
-    	320:{
+		},
+		768:{
+			slidesPerView: 2,
+		},
+    	120:{
     		slidesPerView: 1,
     		slidesOffsetAfter: 50,
     		navigation: {
