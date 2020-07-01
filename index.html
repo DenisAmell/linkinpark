@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linkin Park</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="CSS/swiper.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation">
+            <a href="#home" class="navigation-link">Home</a>
+            <a href="#member" class="navigation-link">Members</a>
+            <a href="#albums" class="navigation-link">Albums</a>
+            <a href="#clips" class="navigation-link">Clips</a>
+            <a href="#gallery" class="navigation-link">Gallery</a>
+            <a href="#live" class="navigation-link">Live</a>
+        </nav>
+        <a href="#home" class="logo">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <div class="icon-group">
+            <a href="https://www.facebook.com/linkinpark" class="icons">
+                <img src="img/icon1.png" alt="icon1">
+            </a>
+            <a href="https://vk.com/linkinpark" class="icons">
+                <img src="img/vk.png" alt="icon2">
+            </a>
+            <a href="https://www.instagram.com/linkinpark/" class="icons">
+                <img src="img/insta.png" alt="icon3">
+            </a>
+        </div>
+        <button class="button">purchase Ticket</button>
+        <div class="burger">
+            <span class="line"></span>
+        </div>
+        <div class="m-menu">
+            <nav class="mobile">
+                <a href="#home" class="navigation-link">Home</a>
+                <a href="#member" class="navigation-link">Members</a>
+                <a href="#albums" class="navigation-link">Albums</a>
+                <a href="#clips" class="navigation-link">Clips</a>
+                <a href="#gallery" class="navigation-link">Gallery</a>
+                <a href="#live" class="navigation-link">Live</a>
+            </nav>
+            <div class="m-icon-group">
+                <a href="https://www.facebook.com/linkinpark" class="icons">
+                    <img src="img/icon1.png" alt="icon1">
+                </a>
+                <a href="https://vk.com/linkinpark" class="icons">
+                    <img src="img/vk.png" alt="icon2">
+                </a>
+                <a href="https://www.instagram.com/linkinpark/" class="icons">
+                    <img src="img/insta.png" alt="icon3">
+                </a>
+            </div>
+            <button class="m-button">purchase Ticket</button>
+        </div>
+    </header>
+    <div class="header-next" id="home">
+        <img src="img/header-next.jpg" alt="">
+        <div class="title">
+            <h1>Linkin Park</h1>
+        </div>
+        <button class="more">DISCOVER MORE</button>
+    </div>
+
+    <div class="container">
+        <div id="member" class="people">
+            <div class="tabs">
+                <div class="tab members-title active" data-target="#members">
+                    <h2>Members</h2>
+                    <span>Group</span>
+                </div>
+                <div class="tab members-title" data-target="#feat">
+                    <h2>Feat</h2>
+                    <span>Group</span>
+                </div>
+            </div>
+            <div class="wrapper visible" id="members">
+                <a href="https://ru.wikipedia.org/wiki/Беннингтон,_Честер" class="member">
+                    <img src="img/member.png" alt="Chester Charles Bennington">
+                    <div class="member-text">
+                        <h3 class="member-name">Chester Charles Bennington</h3>
+                        <span class="role">Vocal</span>
+                        <span class="birthday">20.03.1976</span>
+                    </div>
+                </a>
+                <a href="https://ru.wikipedia.org/wiki/Шинода,_Майк" class="member">
+                    <img src="img/member2.jpg" alt="Michael Kenji Shinoda">
+                    <div class="member-text">
+                        <h3 class="member-name">Michael Kenji Shinoda</h3>
+                        <span class="role">Vocal</span>
+                        <span class="birthday">11.02.1977</span>
+                    </div>
+                </a>
+                <a href="https://ru.wikipedia.org/wiki/Делсон,_Брэд" class="member">
+                    <img src="img/member3.jpg" alt="Bradford Phillip Delson">
+                    <div class="member-text">
+                        <h3 class="member-name">Bradford Phillip Delson</h3>
+                        <span class="role">Guitar</span>
+                        <span class="birthday">1.12.1977</span>
+                    </div>
+                </a>
+                <a href="https://ru.wikipedia.org/wiki/Фаррелл,_Дэвид_Майкл" class="member">
+                    <img src="img/member5.jpg" alt="David Michael Farrell">
+                    <div class="member-text">
+                        <h3 class="member-name">David Michael Farrell</h3>
+                        <span class="role">Bass guitar</span>
+                        <span class="birthday">8.02.1977</span>
+                    </div>
+                </a>
+                <a href="https://ru.wikipedia.org/wiki/Хан,_Джо" class="member">
+                    <img src="img/member4.jpg" alt="Joseph «Joe» Hahn">
+                    <div class="member-text">
+                        <h3 class="member-name">Joseph «Joe» Hahn</h3>
+                        <span class="role">DJ, Keys</span>
+                        <span class="birthday">15.03.1977</span>
+                    </div>
+                </a>
+                <a href="https://ru.wikipedia.org/wiki/Бурдон,_Роберт_Грегори" class="member">
+                    <img src="img/member6.jpg" alt="Robert Gregory Bourdon">
+                    <div class="member-text">
+                        <h3 class="member-name">Robert Gregory Bourdon</h3>
+                        <span class="role">Drums</span>
+                        <span class="birthday">20.01.1979</span>
+                    </div>
+                </a>
+            </div>
+            <div class="wrapper feat" id="feat">
+                <a href="https://www.youtube.com/watch?v=5dmQ3QWpy1Q&list=OLAK5uy_nP5MPYwON84r-9OMGg102ZAGt8SUARRew&index=6" class="member">
+                    <img src="img/feat1.jpg" alt="Kiara Saulters">
+                    <div class="member-text">
+                        <h3 class="member-name">Kiara Saulters(Kiiara)</h3>
+                        <span class="role">Vocal</span>
+                        <span class="birthday">24.05.1995</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=DVPbR_r8XLU&list=OLAK5uy_krQhYJYEucbp6ZQXZCCsDP_QbIgz186jc&index=2" class="member">
+                    <img src="img/feat2.jpg" alt="Page Nye Hamilton">
+                    <div class="member-text">
+                        <h3 class="member-name">Page Nye Hamilton</h3>
+                        <span class="role">Vocal</span>
+                        <span class="birthday">18.05.1960</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=l2Po_BHvLlI" class="member">
+                    <img src="img/feat5.jpg" alt="Deryck Jason Whibley">
+                    <div class="member-text">
+                        <h3 class="member-name">Deryck Jason Whibley</h3>
+                        <span class="role">Sum 41</span>
+                        <span class="birthday">21.03.1980</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=Zv2NuQl8mrs" class="member">
+                    <img src="img/feat6.jpg" alt="Austin Robert Carlile">
+                    <div class="member-text">
+                        <h3 class="member-name">Austin Robert Carlile</h3>
+                        <span class="role">Vocal</span>
+                        <span class="birthday">27.09.1987</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=phVQZrb2AdA&list=OLAK5uy_nP5MPYwON84r-9OMGg102ZAGt8SUARRew&index=2" class="member">
+                    <img src="img/feat3.jpg" alt="Terrence LeVarr Thornton">
+                    <div class="member-text">
+                        <h3 class="member-name">Terrence LeVarr Thornton</h3>
+                        <span class="role">Pusha T</span>
+                        <span class="birthday">13.05.1977</span>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=phVQZrb2AdA&list=OLAK5uy_nP5MPYwON84r-9OMGg102ZAGt8SUARRew&index=2" class="member">
+                    <img src="img/feat4.jpg" alt="Michael Ebenazer Kwadjo ">
+                    <div class="member-text">
+                        <h3 class="member-name">Michael Ebenazer Kwadjo </h3>
+                        <span class="role">Stormzy</span>
+                        <span class="birthday">26.07.1993</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div id="albums" class="members">
+            <div class="members-title">
+                <h2>Popular</h2>
+                <span>Albums</span>
+            </div>
+            <div class="button-wrapper">
+                <button class="back buttons-slider"> < </button>
+                <button class="next buttons-slider"> > </button>
+            </div>
+            <div class="team">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="team-card card1">
+                                <img src="img/album1.jpg" alt="Hybrid Theory">
+                                <div class="team-text">
+                                    <span class="name">Hybrid Theory</span>
+                                    <span class="year">2000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card card2">
+                                <img src="img/album2.jpg" alt="Meteora">
+                                <div class="team-text">
+                                    <span class="name">Meteora</span>
+                                    <span class="year">2003</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card3">
+                            <div class="team-card">
+                                <img src="img/album3.jpg" alt="Minutes to Midnight">
+                                <div class="team-text">
+                                    <span class="name">Minutes to Midnight</span>
+                                    <span class="year">2007</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card card4">
+                                <img src="img/album4.jpg" alt="A Thousand Suns">
+                                <div class="team-text">
+                                    <span class="name">A Thousand Suns</span>
+                                    <span class="year">2010</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card card5">
+                                <img src="img/album5.jpg" alt="Living Things">
+                                <div class="team-text">
+                                    <span class="name">Living Things</span>
+                                    <span class="year">2012</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card card6">
+                                <img src="img/album6.jpg" alt="The Hunting Party">
+                                <div class="team-text">
+                                    <span class="name">The Hunting Party</span>
+                                    <span class="year">2014</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="team-card card7">
+                                <img src="img/album7.jpg" alt="One More Light">
+                                <div class="team-text">
+                                    <span class="name">One More Light</span>
+                                    <span class="year">2017</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="clips" class="best-clips">
+        <div class="video-title">
+            <h2>Popular</h2>
+            <span>Clips</span>
+        </div>  
+            <div class="clips">    
+            <div class="video-wrapper">
+                <a class="clips1" href="https://www.youtube.com/watch?v=kXYiU_JCYtU">
+                    <img src="img/Play.png" alt="Play">
+                </a>
+                <div class="video-text"> <span>Numb</span></div>
+            </div>
+            <div class="video-wrapper">
+                <a class="clips2" href="https://www.youtube.com/watch?v=eVTXPUF4Oz4">
+                    <img src="img/Play.png" alt="Play">
+                </a>
+                <div class="video-text"> <span>In The End</span></div>
+              </div>
+                    <div class="video-wrapper">
+                        <a class="clips3" href="https://www.youtube.com/watch?v=8sgycukafqQ">
+                            <img src="img/Play.png" alt="Play">
+                        </a>
+                        <div class="video-text"> <span>What L've Done</span></div>
+                </div>
+                <div class="video-wrapper">
+                    <a class="clips4" href="https://www.youtube.com/watch?v=ScNNfyq3d_w">
+                        <img src="img/Play.png" alt="Play">
+                    </a>
+                    <div class="video-text"> <span>Castle of Glass</span></div>
+                </div>
+                <div class="video-wrapper">
+                    <a class="clips5" href="https://www.youtube.com/watch?v=ysSxxIqKNN0">
+                        <img src="img/Play.png" alt="Play">
+                   </a>
+                    <div class="video-text"> <span>New Divide</span></div>
+                </div>
+                <div class="video-wrapper">
+                    <a class="clips6" href="https://www.youtube.com/watch?v=Gd9OhYroLN0">
+                        <img src="img/Play.png" alt="Play">
+                    </a>
+                    <div class="video-text"> <span>Crawling</span></div>
+                </div>
+             </div>
+        </div>
+
+
+
+        <div id="gallery" class="gallery">
+            <div class="members-title">
+                <h2>Gallery</h2>
+                <span>Linkin park</span>
+            </div>
+            <div class="gallery-wrapper">
+                <img class="big" src="img/gallery1.jpg" alt="gallery1">
+                <img class="big2" src="img/gallery2.jpg" alt="gallery2">
+                <img src="img/gallery3.jpg" alt="gallery3">
+                <img src="img/gallery4.jpg" alt="gallery4">
+                <img src="img/gallery5.jpg" alt="gallery5">
+                <img class="big3" src="img/gallery9.jpg" alt="gallery9">
+                <img src="img/gallery6.jpg" alt="gallery6">
+                <img src="img/gallery7.jpg" alt="gallery7">
+                <img src="img/gallery8.jpg" alt="gallery8">
+            </div>
+        </div>
+
+            <div id="live" class="video-title">
+                <h2>Best</h2>
+                <span>Live</span>
+            </div>        
+            <div class="videos" id="videos">
+                <div class="video-wrapper">
+                    <a class="video6" data-fancybox href="https://www.youtube.com/watch?v=UE9ZrL9TeVA">
+                        <img src="img/Play.png" alt="Play">
+                    </a>
+                    <div class="video-text"> <span>Live in Moscow</span></div>
+                </div>
+                <div class="video-wrapper">
+                    <a class="video5" data-fancybox href="https://www.youtube.com/watch?v=PoX7C6cwNtY">
+                        <img src="img/Play.png" alt="Play">
+                    </a>
+                    <div class="video-text"> <span>Live Southside</span></div>
+                  </div>
+                        <div class="video-wrapper">
+                            <a class="video3"  href="https://www.youtube.com/watch?v=9VoLHdADma8&t=2021s">
+                                <img src="img/Play.png" alt="Play">
+                            </a>
+                            <div class="video-text"> <span>Life in Honor of Chester Bennington</span></div>
+                    </div>
+                    <div class="video-wrapper">
+                        <a class="video4" href="https://www.youtube.com/watch?v=H4F0PSExNHc">
+                            <img src="img/Play.png" alt="Play">
+                        </a>
+                        <div class="video-text"> <span>Live Rock Werchter</span></div>
+                    </div>
+                    <div class="video-wrapper">
+                        <a class="video2"  href="https://www.youtube.com/watch?v=yTax_1XVsto">
+                            <img src="img/Play.png" alt="Play">
+                       </a>
+                        <div class="video-text"> <span>Rock am Ring</span></div>
+                    </div>
+            <div class="video-wrapper">
+                <a class="video"  href="https://www.youtube.com/watch?v=7Mxg4VkkRRI&t=2793s">
+                    <img src="img/Play.png" alt="Play">
+                </a>
+                <div class="video-text"> <span>Live in Texas</span></div>
+             </div>
+            </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-nav">
+                    <a href="#home" class="footer-link">Home</a>
+                    <a href="#member" class="footer-link">Members</a>
+                    <a href="#albums" class="footer-link">Albums</a>
+                    <a href="#clips" class="footer-link">Clips</a>
+                    <a href="#gallery" class="footer-link">Gallery</a>
+                    <a href="#live" class="footer-link">Live</a>
+            </div>
+            <div class="footer-text">
+                <span>Labels: Warner Brothers Records / Machine Shop Recordings</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="album1">
+        <div class="modal-content">
+                        <img class="album"
+                             src="img/album1.jpg"
+                             alt="Название шоу">
+            <article class="modal__description">
+                <h2 class="modal__title">
+                    Hybrid Theory
+                </h2>
+                <span class="year">Год: 2000</span>
+                <p class="info">Дебютный альбом американской рок-группы Linkin Park, выпущенный 24 октября 2000 года на лейбле Warner Bros.
+                     Название для альбома было взято из предыдущего названия группы. Диск имел огромный коммерческий успех.
+                     В 2001 году в США было продано почти 5 миллионов копий альбома, что сделало Hybrid Theory 
+                     самым продаваемым альбомом года в стране. Альбом поднялся на вторую позицию в американском 
+                     чарте Billboard 200, а также занял высокие позиции в других мировых чартах.</p>
+            </article>
+
+            <section class="music">
+                <div class="songs">
+                    <span>01 - Papercut</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/01 - Papercut.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>02 - One Step Closer</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/02 - One Step Closer.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>03 - With You</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/03 - With You.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>04 - Points of Authority</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/04 - Points of Authority.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>05 - Crawling</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/05 - Crawling.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>06 - Runaway</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/06 - Runaway.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>07 - By Myself</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/07 - By Myself.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>08 - In the End</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/08 - In the End.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>09 - A Place for My Head</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/09 - A Place for My Head.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>10 - Forgotten</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/10 - Forgotten.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>11 - Cure for the Itch</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/11 - Cure for the Itch.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>12 - Pushing Me Away</span>
+                    <audio src="Music/Linkin Park - Hybrid Theory/12 - Pushing Me Away.mp3" controls></audio>
+                </div>
+            </section>
+            <div class="cross">
+                <span></span>
+                <span></span>
+            </div>
+        </div>        
+    </div>
+
+  <div class="album2">
+        <div class="modal-content">
+                        <img class="album"
+                             src="img/album2.jpg"
+                             alt="Название шоу">
+            <article class="modal__description">
+                <h2 class="modal__title">
+                    Meteora
+                </h2>
+                <span class="year">Год: 2003</span>
+                <p class="info">
+                    Второй студийный альбом калифорнийской мультиплатиновой альтернативной рок-группы Linkin Park, впервые выпущенный 25 марта 2003 года. Альбом последовал за совместным проектом Reanimation, который содержал ремиксы с дебютного альбома Hybrid Theory. Примерно через год после выхода альбома Linkin Park выпустили синглы с Meteora, включая «Somewhere I Belong», «Faint», «Breaking The Habit» и «Numb». Трек «Lying from You» был выпущен в качестве промосингла.
+                </p>
+            </article>
+
+            <section class="music">
+                <div class="songs">
+                    <span>01 - Foreword</span>
+                    <audio src="Music/Linkin Park - Meteora/01 - Foreword.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>02 - Don't Stay</span>
+                    <audio src="Music/Linkin Park - Meteora/02 - Don't Stay.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>03 - Somewhere I Belong</span>
+                    <audio src="Music/Linkin Park - Meteora/03 - Somewhere I Belong.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>04 - Lying from You</span>
+                    <audio src="Music/Linkin Park - Meteora/04 - Lying from You.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>05 - Hit the Floor</span>
+                    <audio src="Music/Linkin Park - Meteora/05 - Hit the Floor.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>06 - Easier to Run</span>
+                    <audio src="Music/Linkin Park - Meteora/06 - Easier to Run.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>07 - Faint</span>
+                    <audio src="Music/Linkin Park - Meteora/07 - Faint.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>08 - Figure.09</span>
+                    <audio src="Music/Linkin Park - Meteora/08 - Figure.09.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>09 - Breaking the Habit</span>
+                    <audio src="Music/Linkin Park - Meteora/09 - Breaking the Habit.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>10 - From the Inside</span>
+                    <audio src="Music/Linkin Park - Meteora/10 - From the Inside.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>11 - Nobody's Listening</span>
+                    <audio src="Music/Linkin Park - Meteora/11 - Nobody's Listening.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>12 - Numb</span>
+                    <audio src="Music/Linkin Park - Meteora/13 - Numb.mp3" controls></audio>
+                </div>
+            </section>
+            <div class="cross2">
+                <span></span>
+                <span></span>
+            </div>
+        </div>        
+    </div>
+    <div class="album3">
+        <div class="modal-content">
+                        <img class="album"
+                             src="img/album3.jpg"
+                             alt="Название шоу">
+            <article class="modal__description">
+                <h2 class="modal__title">
+                    Minutes to Midnight
+                </h2>
+                <span class="year">Год: 2007</span>
+                <p class="info">
+                    Третий студийный альбом мультиплатиновой американской рок-группы Linkin Park, релиз которого состоялся 14 мая 2007 года, за исключением Северной Америки, где он был выпущен 15 мая. Название альбома связано с Часами Судного дня. Первым синглом стал трек What I’ve Done, вторым — Bleed It Out, третьим — Shadow of the Day, четвёртым — Given Up. Последним же синглом стала песня Leave Out All the Rest. На все синглы были сняты клипы.
+                </p>
+            </article>
+
+            <section class="music">
+                <div class="songs">
+                    <span>01 - Wake</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/01 - Wake.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>02 - Given Up</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/02 - Given Up.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>03 - Leave Out All The Rest</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/03 - Leave Out All The Rest.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>04 - Bleed It Out</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/04 - Bleed It Out.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>05 - Shadow Of The Day</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/05 - Shadow Of The Day.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>06 - What I've Done</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/06 - What I've Done.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>07 - Hands Held High</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/07 - Hands Held High.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>08 - No More Sorrow</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/08 - No More Sorrow.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>09 - Valentine's Day</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/09 - Valentine's Day.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>10 - In Between</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/10 - In Between.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>11 - In Pieces</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/11 - In Pieces.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>12 - The Little Things Give You Away</span>
+                    <audio src="Music/Linkin Park - Minutes to Midnight/12 - The Little Things Give You Away.mp3" controls></audio>
+                </div>
+            </section>
+            <div class="cross3">
+                <span></span>
+                <span></span>
+            </div>
+        </div>        
+    </div>
+
+    <div class="album4">
+        <div class="modal-content">
+                        <img class="album"
+                             src="img/album4.jpg"
+                             alt="Название шоу">
+            <article class="modal__description">
+                <h2 class="modal__title">
+                    A Thousand Suns
+                </h2>
+                <span class="year">Год: 2010</span>
+                <p class="info">
+                    Четвёртый студийный альбом мультиплатиновой рок-группы Linkin Park, релиз которого состоялся 14 сентября 2010 года; альбом был слит в сеть за неделю до официального релиза — 7 сентября. Это концептуальный альбом, рассказывающий о человеческих страхах, таких, как ядерная война[4][5]. Название альбома происходит из индуистского санскритского священного писания, Бхагавада Гиты: «Если сияние тысячи солнц вспыхнуло бы в небе, это было бы подобно блеску Всемогущего…» — цитата, ставшая известной благодаря Роберту Оппенгеймеру, создателю атомной бомбы[7]. После выхода альбом был встречен неоднозначно[8], но был коммерчески успешен и дебютировал под номером 1 в более чем десяти чартах.
+                </p>
+            </article>
+
+            <section class="music">
+                <div class="songs">
+                    <span>01 - The Requiem</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/01 - The Requiem.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>02 - The Radiance</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/02 - The Radiance.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>03 - Burning In The Skies</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/03 - Burning In The Skies.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>04 - Empty Spaces</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/04 - Empty Spaces.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>05 - When They Come For Me</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/05 - When They Come For Me.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>06 - Robot Boy</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/06 - Robot Boy.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>07 - Jornada Del Muerto</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/07 - Jornada Del Muerto.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>08 - Waiting For The End</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/08 - Waiting For The End.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>09 - Blackout</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/09 - Blackout.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>10 - Wretches And Kings</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/10 - Wretches And Kings.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>11 - Wisdom, Justice, And Love</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/11 - Wisdom, Justice, And Love.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>12 - Iridescent</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/12 - Iridescent.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>13 - Fallout</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/13 - Fallout.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>14 - The Catalyst</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/14 - The Catalyst.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>15 - The Messenger</span>
+                    <audio src="Music/Linkin Park - A Thousand Suns/15 - The Messenger.mp3" controls></audio>
+                </div>
+            </section>
+            <div class="cross4">
+                <span></span>
+                <span></span>
+            </div>
+        </div>        
+    </div>
+
+    <div class="album5">
+        <div class="modal-content">
+                        <img class="album"
+                             src="img/album5.jpg"
+                             alt="Название шоу">
+            <article class="modal__description">
+                <h2 class="modal__title">
+                    Living Things
+                </h2>
+                <span class="year">Год: 2012</span>
+                <p class="info">
+                    Пятый студийный альбом американской рок-группы Linkin Park. Он был записан в 2011—2012 годах в Северном Голливуде, на студии NRG Studios (англ.)русск. в сотрудничестве с продюсером Риком Рубином и выпущен в США 26 июня 2012 года на лейбле Warner Bros. Records. Пытаясь отделаться от статуса ню-метал-группы и избавиться от своего прежнего, привычного звучания, в новом альбоме Linkin Park добавили к своему звучанию такие жанры, как фолк и электронная музыка. Тематически альбом отличается от своего предшественника, A Thousand Suns, он повествует о проблемах личного характера и основан на собственном опыте музыкантов.
+                </p>
+            </article>
+
+            <section class="music">
+                <div class="songs">
+                    <span>01 - LOST IN THE ECHO</span>
+                    <audio src="Music/Linkin Park - Living things/01 - LOST IN THE ECHO.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>02 - IN MY REMAINS</span>
+                    <audio src="Music/Linkin Park - Living things/02 - IN MY REMAINS.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>03 - BURN IT DOWN</span>
+                    <audio src="Music/Linkin Park - Living things/03 - BURN IT DOWN.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>04 - LIES GREED MISERY</span>
+                    <audio src="Music/Linkin Park - Living things/04 - LIES GREED MISERY.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>05 - I'LL BE GONE</span>
+                    <audio src="Music/Linkin Park - Living things/05 - I'LL BE GONE.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>06 - CASTLE OF GLASS</span>
+                    <audio src="Music/Linkin Park - Living things/06 - CASTLE OF GLASS.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>07 - VICTIMIZED</span>
+                    <audio src="Music/Linkin Park - Living things/07 - VICTIMIZED.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>08 - ROADS UNTRAVELED</span>
+                    <audio src="Music/Linkin Park - Living things/08 - ROADS UNTRAVELED.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>09 - SKIN TO BONE</span>
+                    <audio src="Music/Linkin Park - Living things/09 - SKIN TO BONE.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>10 - UNTIL IT BREAKS</span>
+                    <audio src="Music/Linkin Park - Living things/10 - UNTIL IT BREAKS.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>11 - TINFOIL</span>
+                    <audio src="Music/Linkin Park - Living things/11 - TINFOIL.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>12 - POWERLESS</span>
+                    <audio src="Music/Linkin Park - Living things/12 - POWERLESS.mp3" controls></audio>
+                </div>
+            </section>
+            <div class="cross5">
+                <span></span>
+                <span></span>
+            </div>
+        </div>        
+    </div>
+
+    <div class="album6">
+        <div class="modal-content">
+                        <img class="album"
+                             src="img/album6.jpg"
+                             alt="Название шоу">
+            <article class="modal__description">
+                <h2 class="modal__title">
+                    The Hunting Party
+                </h2>
+                <span class="year">Год: 2014</span>
+                <p class="info">
+                    Шестой студийный альбом мультиплатиновой американской рок-группы Linkin Park, вышедший 17 июня 2014 года[4]. В отличие от предыдущих студийных альбомов, The Hunting Party спродюсирован самими участниками группы. 6 марта был выпущен первый сингл альбома — «Guilty All the Same», а 6 мая — второй сингл — «Until It’s Gone». 1 июня был открыт предзаказ на альбом.
+                </p>
+            </article>
+
+            <section class="music">
+                <div class="songs">
+                    <span>01 - Keys To The Kingdom</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/01 - Keys To The Kingdom.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>02 - All For Nothing</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/02 - All For Nothing (Feat. Page Hamilton).mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>03 - Guilty All The Same</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/03 - Guilty All The Same (Feat. Rakim).mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>04 - The Summoning</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/04 - The Summoning.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>05 - War</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/05 - War.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>06 - Wastelands</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/06 - Wastelands.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>07 - Until It's Gone</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/07 - Until It's Gone.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>08 - Rebellion</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/08 - Rebellion (Feat. Daron Malakian).mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>09 - Mark The Graves</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/09 - Mark The Graves.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>10 - Drawbar</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/10 - Drawbar (Feat. Tom Morello).mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>11 - Final Masquerade</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/11 - Final Masquerade.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>12 - A Line In The Sand</span>
+                    <audio src="Music/Linkin Park - The Hunting Party/12 - A Line In The Sand.mp3" controls></audio>
+                </div>
+            </section>
+            <div class="cross6">
+                <span></span>
+                <span></span>
+            </div>
+        </div>        
+    </div>
+
+    <div class="album7">
+        <div class="modal-content">
+                        <img class="album"
+                             src="img/album7.jpg"
+                             alt="Название шоу">
+            <article class="modal__description">
+                <h2 class="modal__title">
+                    One More Light
+                </h2>
+                <span class="year">Год: 2017</span>
+                <p class="info">
+                    Седьмой студийный альбом американской мультиплатиновой рок-группы Linkin Park, вышедший 19 мая 2017 года на лейблах Warner Bros. Records и Machine Shop Recordings. Альбом сильно отличается от предшествующего The Hunting Party — One More Light не содержит тяжёлых гитарных риффов и записан в жанрах поп и поп-рок.
+                    Первым синглом с альбома является трек «Heavy», вышедший 16 февраля 2017 года, 9 марта на официальном YouTube-канале группы появился официальный видеоклип. Группа также выпустила несколько промосинглов — «Battle Symphony», «Good Goodbye» и «Invisible». На каждый из синглов было выпущено лирик-видео, 5 мая в сеть был выложен официальный клип на песню «Good Goodbye».
+                </p>
+            </article>
+
+            <section class="music">
+                <div class="songs">
+                    <span>01 - Nobody Can Save Me</span>
+                    <audio src="Music/Linkin Park - One More Light/01. Nobody Can Save Me.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>02 - Good Goodbye</span>
+                    <audio src="Music/Linkin Park - One More Light/02. Good Goodbye (feat. Pusha T and Stormzy).mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>03 - Talking to Myself</span>
+                    <audio src="Music/Linkin Park - One More Light/03. Talking to Myself.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>04 - Battle Symphony</span>
+                    <audio src="Music/Linkin Park - One More Light/04. Battle Symphony.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>05 - Invisible</span>
+                    <audio src="Music/Linkin Park - One More Light/05. Invisible.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>06 - Heavy</span>
+                    <audio src="Music/Linkin Park - One More Light/06. Heavy (feat. Kiiara).mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>07 - Sorry for Now</span>
+                    <audio src="Music/Linkin Park - One More Light/07. Sorry for Now.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>08 - Halfway Right</span>
+                    <audio src="Music/Linkin Park - One More Light/08. Halfway Right.mp3" controls></audio>
+                </div>
+                <div class="songs">
+                    <span>09 - One More Light</span>
+                    <audio src="Music/Linkin Park - One More Light/09. One More Light.mp3" controls></audio>
+                </div>
+            </section>
+            <div class="cross7">
+                <span></span>
+                <span></span>
+            </div>
+        </div>        
+    </div> 
+
+
+    <script src="JS/jquery-3.5.1.min.js"></script>
+    <script src="JS/jquery.fancybox.min.js"></script>
+    <script src="JS/swiper.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
