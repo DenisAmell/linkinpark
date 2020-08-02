@@ -9,6 +9,11 @@ body{
 html{
     scroll-behavior: smooth;
 }
+.img-adaptive{
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
 .header{
     background-color: #000;
     color: #fff;
@@ -20,7 +25,7 @@ html{
     top: 0;
     right: 0;
     z-index: 50;
-}
+} 
 .logo img{
     max-width: 120px;
     cursor: pointer;
@@ -239,7 +244,7 @@ html{
     margin-top: 5px;
 }
 .modal__description .year{
-    color: #000;
+    color: #fff;
     font-size: 20px;
     margin-top: 5px;
 }
@@ -307,13 +312,14 @@ html{
 	max-height: 800px;
     padding: 35px 50px 35px 50px;
     background-color: #ccc;
+    background-image: url(../img/modalfon.jpg);
     /* background-image: url(https://krot.info/uploads/posts/2020-01/1579539522_26-82.jpg); */
     background-position: center;
     box-shadow:  10px -10px 10px 1px #000;
     font-size: 14px;
     line-height: 1.2;
     font-weight: bold;
-    color: #000;
+    color: #fff;
     margin: 0 200px;
     display: flex;
     justify-content: space-between;
@@ -963,6 +969,18 @@ rd{
         min-height: 200px;
         max-height: 500px;
     }
+    .gallery-wrapper img{
+        max-width: 30%;
+    }
+    .gallery-wrapper .big{
+        max-width: 50%;
+    }
+    .gallery-wrapper .big2{
+        max-width: 40%;
+    }
+    .gallery-wrapper .big3{
+        max-width: 90%;
+    }
 }
 @media (max-width: 768px){
     .container{
@@ -1057,6 +1075,18 @@ rd{
         min-height: 300px;
         max-height: 500px;
     }
+    .gallery-wrapper img{
+        max-width: 28.35%;
+    }
+    .gallery-wrapper .big{
+        max-width: 55%;
+    }
+    .gallery-wrapper .big2{
+        max-width: 30%;
+    }
+    .gallery-wrapper .big3{
+        max-width: 85%;
+    }
 }
 
 @media (max-width: 500px){
@@ -1134,6 +1164,18 @@ rd{
     }
     .footer-text{
         display: none;
+    }
+    .gallery-wrapper img{
+        max-width: 26.75%;
+    }
+    .gallery-wrapper .big{
+        max-width: 45%;
+    }
+    .gallery-wrapper .big2{
+        max-width: 35%;
+    }
+    .gallery-wrapper .big3{
+        max-width: 80%;
     }  
 }
 @media (max-width: 320px){
@@ -1238,5 +1280,20 @@ rd{
     }
     .more{
         width: 137px;
+    }
+    .gallery-wrapper{
+        max-width: 100%;
+    }
+    .gallery-wrapper img{
+        max-width: 26.75%;
+    }
+    .gallery-wrapper .big{
+        max-width: 50%;
+    }
+    .gallery-wrapper .big2{
+        max-width: 30%;
+    }
+    .gallery-wrapper .big3{
+        max-width: 80%;
     }
 }
