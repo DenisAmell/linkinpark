@@ -1,98 +1,67 @@
-$(document).ready(function () {
-	const mMenuBtn = $(".burger");
-	const mMenu = $(".m-menu");
-	const tab = $(".tab");
-	const line = $(".line");
-	const modalWindow = $(".modal-window");
-	const album1 = $(".album1");
-	const card1 = $(".card1");
-	const album2 = $(".album2");
-	const card2 = $(".card2");
-	const album3 = $(".album3");
-	const card3 = $(".card3");
-	const album4 = $(".album4");
-	const card4 = $(".card4");
-	const album5 = $(".album5");
-	const card5 = $(".card5");
-	const album6 = $(".album6");
-	const card6 = $(".card6");
-	const album7 = $(".album7");
-	const card7 = $(".card7");
-	const cross = $(".cross");
-	const cross2 = $(".cross2");
-	const cross3 = $(".cross3");
-	const cross4 = $(".cross4");
-	const cross5 = $(".cross5");
-	const cross6 = $(".cross6");
-	const cross7 = $(".cross7");
-	
+	const cardBtn = document.querySelectorAll('.card-btn');
+	const albumBlock = document.querySelectorAll('.album-block');
+	const crossBtn = document.querySelectorAll('.cross-btn');
 
-	mMenuBtn.on('click', function() {
-		mMenu.toggleClass("active");
-		mMenuBtn.toggleClass("active");
-		line.toggleClass("active");
-		$('body').toggleClass("no-scroll");
+	let tab = function () {
+		let tabBtn = document.querySelectorAll('.tab-btn');
+		let tabBlock = document.querySelectorAll('.tab-block');
+		let tabName;
+
+		tabBtn.forEach(item => {
+			item.addEventListener('click', selectTabNav)
+		});
+
+		function selectTabNav() {
+			tabBtn.forEach(item => {
+				item.classList.remove('active');
+			});
+			this.classList.add('active');
+			tabName = this.getAttribute('data-tab-name');
+			selectTabContent(tabName);
+		}
+
+		function selectTabContent(tabName){
+			tabBlock.forEach(item => {
+				item.classList.contains(tabName) ? item.classList.add('active') : 
+				item.classList.remove('active');
+			})
+		}
+	};
+
+	tab();
+ 
+	cardBtn.forEach((btn, i) => { // перебор элементов
+		btn.addEventListener('click', () => { // навешиваем событие на все кнопки
+			albumBlock[i].classList.add('active');
+		})
 	});
-	mMenu.on('click', function(){
-		mMenu.toggleClass("active");
-		mMenuBtn.toggleClass("active");
-		line.toggleClass("active");
-		$('body').toggleClass("no-scroll");
+
+	crossBtn.forEach((btn, i) => { // перебор элементов
+		btn.addEventListener('click', () => { // навешиваем событие на все кнопки
+			albumBlock[i].classList.remove('active');
+		})
 	});
-	card1.on('click', function(){
-		album1.toggleClass("active");
+
+	const burger = document.querySelector('.burger');
+	const mMenu = document.querySelector('.m-menu');
+	const line = document.querySelector('.line');
+
+	burger.addEventListener('click', function() {
+		mMenu.classList.toggle("active");
+		burger.classList.toggle("active");
+		line.classList.toggle("active");
 	});
-	card2.on('click', function(){
-		album2.toggleClass("active");
-	});
-	card3.on('click', function(){
-		album3.toggleClass("active");
-	});
-	card4.on('click', function(){
-		album4.toggleClass("active");
-	});
-	card5.on('click', function(){
-		album5.toggleClass("active");
-	});
-	card6.on('click', function(){
-		album6.toggleClass("active");
-	});
-	card7.on('click', function(){
-		album7.toggleClass("active");
-	});
-	cross.on('click', function(){
-		album1.toggleClass("active");
-	});
-	cross2.on('click', function(){
-		album2.toggleClass("active");
-	});
-	cross3.on('click', function(){
-		album3.toggleClass("active");
-	});
-	cross4.on('click', function(){
-		album4.toggleClass("active");
-	});
-	cross5.on('click', function(){
-		album5.toggleClass("active");
-	});
-	cross6.on('click', function(){
-		album6.toggleClass("active");
-	});
-	cross7.on('click', function(){
-		album7.toggleClass("active");
-	});
-	
-	tab.on('click', function () {
-		tab.removeClass("active");
-		$(this).toggleClass("active");
-		let activeTabContent = $(this).attr('data-target');
-		$('.wrapper').removeClass("visible")
-		$(activeTabContent).toggleClass('visible');
-	});
+
+	mMenu.addEventListener('click', function() {
+		mMenu.classList.toggle("active");
+		burger.classList.toggle("active");
+		line.classList.toggle("active");
+	})
 
 	var mySwiper = new Swiper ('.swiper-container', {
 	slidesPerView: 3,
 	spaceBetween: 25,
+	height: 520,
 	loop: true,
     slidesOffsetAfter: 50,
     		navigation: {
@@ -111,11 +80,100 @@ $(document).ready(function () {
 		},
     	120:{
     		slidesPerView: 1,
-    		slidesOffsetAfter: 50,
+    	},
+    },
+  });
+
+  var mySwiper2 = new Swiper ('.swiper-gallery-up', {
+	slidesPerView: 3,
+	loop: true,
+	autoplay: {
+		delay: 2000,
+	  },
+	  breakpoints: {
+			1200: {
+				slidesPerView: 3,
+			},
+			450:{
+				slidesPerView: 2,
+				
+			},
+			120:{
+				slidesPerView: 1,
+			}
+		},
+  });
+
+  var mySwiper3 = new Swiper ('.swiper-gallery', {
+	slidesPerView: 3,
+	reverseDirection: true,
+	loop: true,
+	autoplay: {
+		delay: 2000,
+		reverseDirection: true,
+	  },
+	  breakpoints: {
+			1200: {
+				slidesPerView: 3,
+			},
+			450:{
+				slidesPerView: 2,
+				
+			},
+			120:{
+				slidesPerView: 1,
+			}
+		},
+  });
+
+  var mySwiper4 = new Swiper ('.swiper-gallery-down', {
+	slidesPerView: 3,
+	loop: true,
+	autoplay: {
+		delay: 2000,
+	  },
+	  breakpoints: {
+			1200: {
+				slidesPerView: 3,
+			},
+			450:{
+				slidesPerView: 2,
+				
+			},
+			120:{
+				slidesPerView: 1,
+			}
+		},
+  });
+
+  var mySwiper5= new Swiper ('.swiper-news', {
+	slidesPerView: 3,
+	spaceBetween: 25,
+	slidesOffsetAfter: 50,
+	loop:true,
+    		navigation: {
+                nextEl: ".next",
+			},
+			autoplay: {
+				delay: 5000,
+			  },
+    breakpoints: {
+    	1200: {
+    		slidesPerView: 3,
+    	},
+		991:{
+    		slidesPerView: 2,
+		},
+		768:{
+			slidesPerView: 2,
+		},
+    	120:{
+    		slidesPerView: 1,
     		navigation: {
     			nextEl: ".button-next",
     		},
     	},
     },
   });
-});
+
+  new  WOW().init();
