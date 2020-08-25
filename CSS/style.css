@@ -87,6 +87,12 @@ html{
     justify-content: center;
     flex-direction: column;
 }
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .title h1{
     margin: 0;
     padding: 0;
@@ -128,13 +134,13 @@ html{
 .people{
     margin-top: 100px;
 }
-.wrapper{
+.tab-block{
     display: none;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.wrapper.visible{
+.tab-block.active{
     display: flex;
 }
 .member{
@@ -180,11 +186,11 @@ html{
     align-items: center;
     border-bottom: 1px solid #000;
 }
-.members-title{
+.tab-btn{
     padding: 20px;
     cursor: pointer;
 }
-.members-title h2{
+.tab-btn h2{
     margin: 0;
     padding: 0;
     font-size: 30px;
@@ -194,34 +200,32 @@ html{
     text-transform: uppercase;
     font-family: 'Martel', serif;
 }
-.members-title span{
+.tab-btn span{
     font-size: 35px;
     line-height: 30px;
     color: #ccc;
     font-family: 'Dancing Script', cursive;
 }
-.members-title.active{
+.tab-btn.active{
     border: 2px solid #000;
     border-bottom: none;
     background-color: #ccc;
 }
-.members-title.active span{
+.tab-btn.active span{
     color: #fff;
 }
 .team{
     display: flex;
     position: relative;
 }
-.team-card{
+.card-btn{
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     width: 372px;
-    height: 372px;
     margin-top: 40px;
     cursor: pointer;
 }
-.team-card img{
+.card-btn img{
     display: block;
     width: 372px;
 }
@@ -248,9 +252,7 @@ html{
     font-size: 20px;
     margin-top: 5px;
 }
-.swiper-slide{
-    height: 520px !important;
-}
+
 .button-wrapper{
     text-align: right;
     height: 30px;
@@ -270,13 +272,7 @@ html{
 .modal-content{
     overflow: auto;
 }
-.album1,
-.album2,
-.album3,
-.album4,
-.album5,
-.album6,
-.album7{
+.album-block{
     position: fixed;
     top: 0;
     display: -webkit-box;
@@ -293,13 +289,7 @@ html{
     z-index: 990;
     background-color: rgba(0, 0, 0, 0.8);
 }
-.album1.active,
-.album2.active,
-.album3.active,
-.album4.active,
-.album5.active,
-.album6.active,
-.album7.active{
+.album-block.active{
     display: flex;
 }
 .modal-content{
@@ -350,13 +340,7 @@ html{
     flex-direction: column;
     margin-top: 40px;
 }
-.cross, 
-.cross2, 
-.cross3, 
-.cross4, 
-.cross5, 
-.cross6, 
-.cross7{
+.cross{
     position: absolute;
     top: 0;
     right: 0;
@@ -379,13 +363,7 @@ html{
     transition: all ease .5s;
 }
 
-.cross span, 
-.cross2 span, 
-.cross3 span, 
-.cross4 span, 
-.cross5 span, 
-.cross6 span, 
-.cross7 span{
+.cross span{
     width: 60%;
     height: 3px;
     background-color: #000;
@@ -398,13 +376,7 @@ html{
     transition: all ease .3s;
 }
 
-.cross span:nth-child(1), 
-.cross2 span:nth-child(1),
-.cross3 span:nth-child(1), 
-.cross4 span:nth-child(1), 
-.cross5 span:nth-child(1), 
-.cross6 span:nth-child(1), 
-.cross7 span:nth-child(1) {
+.cross span:nth-child(1){
     background-color: #fff;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -423,13 +395,7 @@ html{
 }
 
 
-.cross span:nth-child(2), 
-.cross2 span:nth-child(2),
-.cross3 span:nth-child(2), 
-.cross4 span:nth-child(2),
-.cross5 span:nth-child(2), 
-.cross6 span:nth-child(2),
-.cross7 span:nth-child(2){
+.cross span:nth-child(2){
     background-color: #fff;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
@@ -454,88 +420,64 @@ html{
     align-items: center;
     justify-content: space-between;
 }
-.best-clips{
-    height: 850px;
-}
 .clips{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
-.clips1{
+.clips-link{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 360px;
-    height: -webkit-fill-available;
+    height: 292px;
+    cursor: pointer;
+}
+.clips1{
     background-image: url(https://1gr.cz/fotky/lidovky/17/073/lnc460/JTO6cc4a0_untitled.png);
     background-position:center;
     background-repeat: no-repeat;
     cursor: pointer;
 }
 .clips2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: -webkit-fill-available;
     background-image: url(https://i.ytimg.com/vi/dOtR5jOa7lI/hqdefault.jpg);
     background-position:center;
     background-repeat: no-repeat;
-    cursor: pointer;
 }
 .clips3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: -webkit-fill-available;
     background-image: url(https://pm1.narvii.com/7276/69d77f215fba09cb93b55c40bc950c790b58c5ear1-720-405v2_128.jpg);
     background-repeat: no-repeat;
-    cursor: pointer;
+    background-size: cover;
+    background-position: center;
 }
 .clips4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: -webkit-fill-available;
     background-image: url(https://sun9-39.userapi.com/c6065/u39488818/video/y_451ad7f9.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    cursor: pointer;
-    margin-top: 90px;
 }
 .clips5{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: -webkit-fill-available;
     background-image: url(https://s56.radikal.ru/i154/1204/ff/fdc23431bb19.jpg);
     background-repeat: no-repeat;
-    cursor: pointer;
-    margin-top: 90px;
 }
 .clips6{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: -webkit-fill-available;
     background-image: url(https://i.ytimg.com/vi/BoiIqybWee4/sddefault.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    cursor: pointer;
-    margin-top: 90px;
 }
 .gallery{
     margin-top: 100px;
 }
-.gallery-wrapper{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 40px;
+.gallery-slide{
+    width: 300px;
+    height: 350px;
+}
+.polosa{
+    max-width: 100%;
+    height: 60px;
+    background: url(../img/polosa2.jpg);
+    background-position: center;
+    margin: 30px 0;
 }
 .gallery-wrapper img{
     max-width: 33.33%;
@@ -557,86 +499,54 @@ html{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: space-around;
+    height: auto;
 }
 .video-wrapper{
-    height: 290px;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 292px;
     margin-top: 20px;
+    flex-basis: 33%;
 }
-.video-wrapper:nth-child(2),
-.video-wrapper:nth-child(3),
-.video-wrapper:nth-child(5),
-.video-wrapper:nth-child(6){
-    margin-left: 106px;
-}
-.video{
+.video-link{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 360px;
-    height: -webkit-fill-available;
+    height: 292px;
+    cursor: pointer;
+}
+.video{
     background-image: url(https://www.ambafrance-yu.org/wp-content/uploads/2016/11/linkin-park-768x432.jpg);
     background-position:center;
     background-repeat: no-repeat;
-    cursor: pointer;
-    margin-top: 90px;
 }
 .video2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: -webkit-fill-available;
     background-image: url(https://sun9-28.userapi.com/c841231/u69395134/video/y_058d56e5.jpg);
     background-position:center;
     background-repeat: no-repeat;
-    cursor: pointer;
-    margin-top: 90px;
 }
 .video3{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: -webkit-fill-available;
     background-image: url(https://i.ytimg.com/vi/2ktSl_n1Q8Q/hqdefault.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    cursor: pointer;
 }
 .video4{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: -webkit-fill-available;
     background-image: url(https://pic.portall.zp.ua/sd/b/dd/9umrTY9IfFfdhc.jpg);
     background-position:center;
     background-repeat: no-repeat;
-    cursor: pointer;
-    margin-top: 90px;
 }
 .video5{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: -webkit-fill-available;
     background-image: url(https://i.ytimg.com/vi/6XH7DAq1hpY/sddefault.jpg);
     background-position:center;
     background-repeat: no-repeat;
-    cursor: pointer;
 }
 .video6{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 360px;
-    height: -webkit-fill-available;
     background-image: url(http://i0.hdslb.com/bfs/archive/ac87809b6d7146b9acbe40a39d63cbf556766d00.jpg);
     background-position:center;
     background-repeat: no-repeat;
-    cursor: pointer;
 }
 .video-title{
     margin-top: 60px;
@@ -740,17 +650,79 @@ audio{
     height: 40px;
     width: 230px;
 }
-rd{
-    background-image: url(../img/fon.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 350px;
-    color: #fff;
+
+.news{
+	padding-top: 70px;
+	padding-bottom: 100px;
+	transition-duration: 2s;
 }
+.section-news-title{
+	font-weight: 900;
+	color: #000;
+	margin-bottom: 65px;
+}
+.news-cards{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.news-card{
+	flex-basis: 33%;
+	background: #ccc;
+	padding: 30px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+.date{
+	font-size: 21px;
+    line-height: 16px;
+    color: blue;
+}
+.news-title{
+	font-weight: 900;
+	font-size: 22px;
+	line-height: 28px;
+	color: #000;
+	margin-top: 14px;
+	text-decoration: none;
+	display: block;
+}
+.button-next{
+	display: none;
+	background: transparent;
+	border: none;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 99;
+    cursor: pointer;
+}
+.arrow{
+	fill: #000;
+}
+
+.quote-text{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.quote{
+    font-size: 32px;
+    line-height: 34px;
+    font-weight: bold;
+    font-family: 'Sriracha', cursive;
+}
+.quote span{
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+}
+.chester{
+    font-family: 'Dancing Script', cursive;
+    text-align: right;
+    font-size: 22px;
+}
+
 .footer{
-    height: 115px;
     display: flex;
     position: relative;
     top: 0;
@@ -761,13 +733,13 @@ rd{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 230px;
     background: rgba(0, 0, 0, 0.9);
 }
 .footer-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .footer-link{
     text-decoration: none;
@@ -775,6 +747,7 @@ rd{
     text-transform: uppercase;
     color: #b3b3b3;
     margin-right: 40px;
+    margin-top: 40px;
 }
 .footer-text{
     font-size: 18px;
@@ -883,10 +856,27 @@ rd{
 
 
 
+@media(max-width: 1350px){
+    .header-next{
+        height: 670px;
+
+    }
+    .modal-content{
+        min-height: 350px;
+        max-height: 600px;
+        padding: 25px 40px 25px 40px;
+    }
+    .album, .modal__description{
+        flex-basis: 50%;
+    }
+    .info{
+        font-size: 15px;
+    }
+}
 
 @media (max-width: 1200px){
     .container{
-        width: 900px;
+        width: 90%;
     }
     .navigation-link{
         margin-left: 20px;
@@ -895,32 +885,13 @@ rd{
         max-width: 700px;
     }
     .modal-content{
-        min-width: 270px;
+        min-width: 370px;
+        max-width: 700px;
+        min-height: 200px;
+        max-height: 500px;
     }
     .songs{
         flex: 50%;
-    }
-    .best-clips{
-        height: 1250px;
-    }
-    .videos{
-        height: 1100px;
-    }
-    .video-wrapper{
-        flex: 50%;
-        margin-top: 0;
-    }
-    .video-wrapper:nth-child(2),
-    .video-wrapper:nth-child(3),
-    .video-wrapper:nth-child(5),
-    .video-wrapper:nth-child(6){
-        margin-left: 0;
-    }
-    .clips4,.clips3,.video3{
-        margin-top: 90px;
-    }
-    .clips5,.clips6,.video2, .video{
-        margin-top: 190px;
     }
     .member{
         max-width: 420px;
@@ -928,32 +899,24 @@ rd{
     .member-name{
         font-size: 19px;
     }
-    .header-next{
-        height: 670px;
+    .video-wrapper{
+        flex-basis: 50%;
     }
 }
 @media (max-width: 991px){
-    .container{
-        width: 750px;
-    }
     .icon-group{
         display: none;
     }
-    .team-card img{
+    .card-btn img{
         max-width: 300px;
     }
     .team-text{
         max-width: 300px;
     }
-    .video{
-        width: 220px;
-        height: 240px;
-        margin-top: 70px;
-    }
     .song img{
         width: 250px;
     }
-    .team-card{
+    .card-btn{
         margin: auto;
         margin-top: 40px;
     }
@@ -963,6 +926,10 @@ rd{
     .header-next{
         height: 500px;
     }
+    .news-card{
+		flex-basis: 48%;
+		margin-bottom: 20px;
+	}
     .modal-content{
         min-width: 370px;
         max-width: 700px;
@@ -982,10 +949,7 @@ rd{
         max-width: 90%;
     }
 }
-@media (max-width: 768px){
-    .container{
-        width: 550px;
-    }
+@media (max-width: 785px){
     .navigation{
         display: none;
     }
@@ -999,8 +963,10 @@ rd{
         display: none;
     }
     .m-menu.active{
-        display: flex;
         top: 69px;
+    }
+    .videos, .best-clips{
+        justify-content: center;
     }
     .burger{
         display: block;
@@ -1017,40 +983,13 @@ rd{
     .member{
         max-width: 535px;
     }
-    .best-clips{
-        height: 2400px;
+    .quote{
+        font-size: 28px;
+        line-height: 30px;
     }
-    .clips{
-        justify-content: center;
-    }
-    .clips2{
-        margin-top: 90px;
-    }
-    .clips3,.clips6{
-        margin-top: 190px;
-    }
-    .clips4, .video4{
-        margin-top: 290px;
-    }
-    .clips5,.video2{
-        margin-top: 390px;
-    }
-    .clips6,.video{
-        margin-top: 490px;
-        width: 360px;
-    }
-    .videos{
-        height: 2000px;
-    }
-    .video5{
-        margin-top: 90px;
-    }
-    .video3{
-        margin-top: 190px;
-    }
-    .footer{
-        margin-top: 540px;
-    }
+    .quote span{
+        font-size: 35px;
+    }    
     .modal-content{
         min-width: 600px;
     }
@@ -1075,6 +1014,14 @@ rd{
         min-height: 300px;
         max-height: 500px;
     }
+    .news-card{
+		flex-basis: 48%;
+		margin-bottom: 20px;
+		max-width: 90%;
+	}
+	.button-next{
+		display: block;
+	}
     .gallery-wrapper img{
         max-width: 28.35%;
     }
@@ -1090,9 +1037,6 @@ rd{
 }
 
 @media (max-width: 500px){
-    .container{
-        width: 350px;
-    }
     .header-next{
         height: 270px;
     }
@@ -1109,8 +1053,14 @@ rd{
     audio{
         margin-left: 20px;
     }
+    .quote{
+        font-size: 24px;
+        line-height: 25px;
+    }
+    .quote span{
+        font-size: 29px;
+    } 
     .footer-nav{
-        display: block;
         margin-left: 50px;
     }
     .footer-link{
@@ -1146,12 +1096,8 @@ rd{
     .members-title span{
         font-size: 25px;
     }
-    .video,.video2,.video3,.video4,.video5,.video6,.clips1,.clips2,.clips3,.clips4,.clips5,.clips6{
+    .video-text, .clips-link, .video-link{
         width: 290px;
-        height: -webkit-fill-available;
-    }
-    .video-text{
-        max-width: 290px;
     }
     .modal__description .year{
         font-size: 14px;
@@ -1179,18 +1125,11 @@ rd{
     }  
 }
 @media (max-width: 320px){
-    .container{
-        width: 300px;
-    }
     .events-text{
         margin-left: 10px;
     }
     .event-text{
         font-size: 14px;
-    }
-    .video,.video2,.video3,.video4,.video5,.video6,.clips1,.clips2,.clips3,.clips4,.clips5,.clips6{
-        width: 254px;
-        height: -webkit-fill-available;
     }
     .video-text{
         max-width: 254px;
@@ -1269,7 +1208,7 @@ rd{
     audio{
         margin: 0;
     }
-    .team-card, .team-card img, .team-text{
+    .card-btn, .card-btn img, .team-text{
         max-width: 250px;
     }
     .button-wrapper{
